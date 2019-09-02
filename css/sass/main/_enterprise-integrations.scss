@@ -1,0 +1,145 @@
+#hiw-wrapper.custom-solutions{
+    background-image: url(../../media/images/solutions/pump-banner-img.jpg);
+    h1{
+        font-size: 4.1176470588rem;
+        line-height: 1.05em;
+        @media screen and (max-width: 767px) {
+            font-size: 40px;
+        }
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 40em){
+        background-image: url(../../media/images/solutions/pump-banner-img.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    @media screen and (max-width:640px) {
+        padding-top: 0;
+        padding: 100px 0;
+        background-position: bottom right;
+        .row >div{
+            width: 90%;
+        }
+        .small-12.right{
+            float: none !important;
+        }
+    }
+}
+
+
+.enterprise-integrations.designed-for-integreation{
+    padding: 120px 0;
+    background: url(../../media/images/enterprise-solutions/pump-landscape-2.jpg);
+    background-size: cover;
+    background-position: center;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h2{
+            color: #CEA62C;
+            margin-bottom: 50px;
+        }
+        .integration-item{
+            flex: 0 0 calc(50% - 30px);
+            margin: 15px;
+            @media screen and (max-width: 640px) {
+                flex: 0 0 100%;
+            }
+        }
+        .text{
+            padding: 10px 0 20px;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #11456E;
+            }
+            h3{
+                font-family: refrigerator-deluxe, sans-serif;
+                color: #11456E;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                font-size: 2.3rem;
+                letter-spacing: 2px;
+                @media screen and (max-width: 767px) {
+                    font-size: 1.85rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 640px) {
+        padding: 60px 20px;
+        background-position-y: bottom;
+        background-position-x: 90%;
+    }
+}
+
+.monitoring-solutions.smart-sensor.enterprise-integrations-application{
+    padding: 50px 0;
+    .text-container{
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    h2{
+        flex: 1 0 40%;
+        padding: 0 30px;
+        align-self: baseline;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .main-paragraph{
+        margin-bottom: 30px;
+        align-self: flex-end;
+        p{
+            color: white;
+            max-width: 800px;
+        }
+        flex: 1 0 60%;
+        min-width: 500px;
+        @media screen and (max-width: 640px) {
+            padding: 0 30px;
+        }
+    }
+    @media screen and (max-width: 640px){
+        background: linear-gradient(to bottom, #10456C 40%, #fff 40%);
+    }
+}
+
+
+.cta-solutions{
+    background-image: url(../../media/images/solutions/cta-bg-refinery.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    .columns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cta-container{
+            max-width: 730px;
+            background-color: white;
+            text-align: center;
+            padding: 60px;
+            h2{
+                color: #C9A534;
+            }
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .columns{
+            width: 85%;
+            .cta-container{
+                padding: 60px 30px;
+            }
+        }
+    }
+}

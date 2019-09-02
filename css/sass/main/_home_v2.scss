@@ -1,0 +1,550 @@
+.top-bar .title-area img {
+    max-width: 212px;
+}
+
+.top-bar .title-area .name a {
+    display: inline;
+    width: auto;
+}
+
+// body > div.wrapper.home > div.small-size-sensor.row.full > div.medium-5.columns.hand.left > img{
+//     min-height: 700px;
+// }
+
+// #home-vid-wrapper #home-vid-content {
+//     display: flex;
+//     height: 100%;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0 auto;
+//     z-index: 2;
+//     flex-direction: column;
+//     position: relative;
+//     max-width: 80%;
+// }
+
+.small-size-sensor-homev2 {
+    margin-top: 60px;
+
+    .container {
+        display: flex; // max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .img-container {
+            align-self: flex-start;
+            width: 40%;
+        }
+
+        .text-container {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text {
+                padding: 0 8.33%;
+
+                h2 {
+                    font-size: 3.17647rem;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 40px;
+                    }
+                }
+
+                p {
+                    max-width: 700px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1023px) {
+            .img-container {
+                width: 100%;
+                background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.001)), url(../../media/images/placeholders/home-placeholder-1.png);
+                background-size: 100%;
+                background-position: 50% 31%;
+                background-repeat: no-repeat;
+
+                img {
+                    visibility: hidden;
+                    max-height: 400px;
+                }
+            }
+
+            .text-container {
+                width: 100%;
+                margin-top: -15%;
+
+                .text p {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            .img-container {
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+.end-to-end-homev3 {
+    margin-top: 90px;
+
+    h2 {
+        text-align: center;
+        font-size: 3.17647rem;
+
+        @media screen and (max-width: 767px) {
+            font-size: 40px;
+        }
+    }
+
+    .items-container {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item{
+            height: 600px;
+            width: 33%;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+            position: relative;
+            .text {
+                z-index: 2;
+                p, h3{
+                    color: white;
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-family: refrigerator-deluxe, sans-serif;
+                    font-size: 2.7rem;
+                }
+            }
+            &:hover{
+                .item-inner{
+                    transform: scale(1.1);
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                height: 80vh;
+            }
+            @media screen and (max-width: 900px) {
+                width: 99%;
+                height: 400px;
+                margin: auto;
+                margin-bottom: 5px;
+            }
+        }
+        .item:nth-child(1) .item-inner{
+            background-image:linear-gradient( to top, rgba(0,0,0,0.5), rgba(0,0,0,0.001)), url(../../media/images/home_v2/choose-sensor.jpg);
+        }
+        .item:nth-child(2) .item-inner{
+            background-image: linear-gradient( to top, rgba(0,0,0,0.5), rgba(0,0,0,0.001)), url(../../media/images/home_v2/home-sensor-pump.jpg);
+        }
+        .item:nth-child(3) .item-inner{
+            background-image: linear-gradient( to top, rgba(0,0,0,0.5), rgba(0,0,0,0.001)), url(../../media/images/home_v2/monitor-online-2.jpg);
+        }
+        .item .item-inner{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            // background: linear-gradient( to top, rgba(0,0,0,0.5), rgba(0,0,0,0.001)), url(../../media/images/placeholders/home-placeholder-1.png);
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.4s ease;
+            // @media screen and (max-width: 900px){
+            //     background-position: top;                
+            // }
+        }
+    }
+}
+
+.smart-sensor-homev2,
+.monitoring-homev2 {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 8.33%;
+        padding-bottom: 8%;
+
+        .text {
+            text-align: center;
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 3.17647rem;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                max-width: 700px;
+                margin: auto;
+            }
+        }
+    }
+
+    .home-v2-a {
+        align-self: center;
+    }
+}
+
+.smart-sensor-homev2 {
+    background: linear-gradient(to top, #F1F2F6 35%, rgb(255, 255, 255));
+    padding-bottom: 80px;
+    .img-container>.row {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        padding-bottom: 30px;
+        @media screen and (max-width: 640px) {
+            margin-top: 40px;
+        }
+    }
+
+    .sensorFeatured-container,
+    .img-column {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .img-column {
+        align-items: baseline;
+        margin-left: -55px;
+        img {
+            // max-width: 650px;
+            width: auto;
+        }
+    }
+
+    .sensorFeatured-container {
+        justify-content: flex-start;
+    }
+
+    .sensor-type:nth-last-child(1) .sensorFeatured-container {
+        justify-content: center;
+    }
+
+    .sensor-icon {
+        max-width: 70px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #093554;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.7rem;
+        font-family: refrigerator-deluxe,
+            sans-serif;
+    }
+    p{
+        max-width: 300px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .img-column {
+            padding-bottom: 30px;
+            align-items: center;
+            margin-left: 0;
+            img {
+                max-width: 450px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-top: 60px;
+    }
+}
+
+.custom-cta{
+    padding: 80px 0;
+    background: linear-gradient(to top, #F1F2F6 35%, rgb(255, 255, 255));
+    .row{
+        padding: 30px;
+    }
+    @media screen and (max-width: 640px){
+        padding: 60px 20px;
+        .row{
+            padding: 0;
+        }
+    }
+}
+
+.client-testimonials-homev3{
+   padding: 120px 0;
+    .row{
+        max-width: 80rem;  
+        padding: 0 30px;
+        h2{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .testimonial{
+            padding-left: 4rem;
+            position: relative;
+            &:before{
+                position: absolute;
+                top: 0;
+                left: -1rem;
+                width: 4rem;
+                content: url('../../media/images/home_v2/quote.svg');
+            }
+            p:nth-child(1){
+                font-family: refrigerator-deluxe, sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                font-size: 2rem;
+                max-width: 500px
+                
+            }
+            @media screen and (max-width: 1024px) {
+                padding-left: 0;
+                &:before{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 767px){
+                p:nth-child(1){
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px){
+        padding: 60px 20px;
+        .row{
+            padding: 0;
+            h2{
+                max-width: none;
+            }
+        }
+    }
+}
+
+.affordability-homev2 {
+    background-image: url(../../media/images/home_v2/blue-field-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        padding: 6% 4%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .col1,
+        .col2 {
+            padding: 6% 4% 4% 4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+        }
+
+        .col1 {
+            align-items: baseline;
+            width: 60%;
+            // background: white;
+            h2, p{
+                color: white;
+            }
+            h2 {
+                font-size: 3.17647rem;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .col2 {
+            width: 40%;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                width: 380px;
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                color: white;
+                padding: 10px 0;
+                position: relative;
+                align-self: left;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-family: refrigerator-deluxe, sans-serif;
+                font-size: 2rem;
+                font-weight: 700px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: #CEA621;
+                }
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .container .col1,
+        .container .col2 {
+            width: 100%;
+        }
+
+        .container .col1 {
+            background: none;
+        }
+    }
+}
+
+.cta-home{
+    background-image: url(../../media/images/home_v2/tank-bg-cta.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    .columns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cta-container{
+            max-width: 830px;
+            background-color: white;
+            text-align: center;
+            padding: 60px;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .columns{
+            width: 85%;
+            .cta-container{
+                padding: 60px 30px;
+            }
+        }
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.data-alert-box {
+    position: fixed;
+    background-color: #cea724;
+    bottom: 0;
+    left: 0;
+    // width: 100%;
+    z-index: 9999;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: -moz-calc(100% - 20px);
+    width: -webkit-calc(100% - 20px);
+    width: -o-calc(100% - 20px);
+    width: calc(100% - 20px);
+    animation-name: fadein;
+    animation-duration: 1s;
+    // animation-delay: 2s;
+
+    #blog-link {
+        text-decoration: underline;
+    }
+
+    a {
+        color: #222;
+        text-decoration: none;
+    }
+
+    a.close {
+        color: #7b6311;
+        right: 20px;
+        position: absolute;
+        text-decoration: none;
+    }
+
+    &.open {
+        display: block;
+    }
+
+    &.close {
+        display: none;
+    }
+
+    @media #{$small-only} {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+// globals
+.home-v2-a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #13476B;
+    padding: 5px 0;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        height: 3px;
+        width: 100%;
+        background-color: #13476B;
+        transition: width 0.3s ease-in, background-color 0.3s linear;
+    }
+
+    &:hover:after {
+        background-color: #b1901f;
+    }
+}

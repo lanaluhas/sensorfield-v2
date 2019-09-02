@@ -1,0 +1,120 @@
+.who-we-are.company-v2 {
+    // background:linear-gradient(to left, rgba(7, 60, 93, 1), rgba(7, 60, 93, 0.001));
+    // background-image: url(../../media/images/company-v2/sensorfield-team.jpg);
+    // background-size: 50%;
+    background-position: bottom left;
+    position: relative;
+    padding: 180px 0;
+    &:before{
+        background-image: url(../../media/images/company-v2/sensorfield-team-2.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        content: '';
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &:after{
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background:linear-gradient(to left, rgba(7, 60, 93, 1) 90%, rgba(7, 60, 93, 0.001));
+        top: 0;
+        right: 0;
+    }
+    .text{
+        position: relative;
+        z-index: 3;
+        @media (min-width: 900px) {
+            width: 41.6%;
+        }
+        @media (max-width: 899px) {
+            width: 100%;
+            padding-top: 80px;
+        }
+        @media (max-width: 640px) {
+            padding-top: 80px;
+        }
+    }
+    h1,
+    p {
+        color: white;
+        text-align: left;
+    }
+    @media (max-width: 899px) {
+        padding: 330px 0 30px;
+        &:after, &:before{
+            width: 100%;
+        }
+        &:before{
+            height: 60%;
+            background-position: top;
+        }
+        &:after{
+            height: 50%;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            right: auto;
+            background:linear-gradient(to top, rgba(7, 60, 93, 1) 80%, rgba(7, 60, 93, 0.001));
+        }
+    }
+    @media (max-width: 640px) {
+        padding: 330px 0 80px;
+        &:before{
+            height: 50%;
+        }
+        &:after{
+            height: 70%;
+            background:linear-gradient(to top, rgba(7, 60, 93, 1) 80%, rgba(7, 60, 93, 0.001));
+        }
+    }
+}
+
+.our-team-company-v2 {
+    background: linear-gradient(to top, #ECF0F1 50%, white 0%);
+    h2 {
+        margin-bottom: 50px;
+        font-size: 3.17647rem; 
+        @media screen and (max-width: 767px) {
+            font-size: 40px;
+        }
+    }
+    h4{
+        color: #E1B233;
+        font-family: refrigerator-deluxe, sans-serif;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 640px) {
+            margin-bottom: 2px;
+            font-size: 1.7rem;
+        }
+    }
+    // .position{
+    //     font-weight: normal;
+    //     font-size: 1.5rem;
+    //     color: #464646;
+    // }
+    @media (max-width: 640px) {
+        padding-top: 30px;
+        background: #ECF0F1;
+        .member{
+            margin-bottom: 15px;
+        }
+        img{
+            max-height: 300px;
+        }
+    }
+}
+
+.cta-homev2.company-cta {
+    background-color: #ECF0F1;
+}
